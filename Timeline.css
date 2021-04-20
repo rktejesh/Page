@@ -7,20 +7,28 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.imgheader {
+  background: url('https://mediacell.iitr.ac.in/wp-content/uploads/sites/3/2021/01/e-summit-2020jpeg.jpeg') no-repeat center center/cover;
+  width: 100%;
+  height: 700px;
+  opacity:0.75;
+}
+
 #navbar {
   display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #logo img {
   height: 80px;
 }
 
-#navbar {
-  position: relative;
-}
-
 #navbar ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #navbar::before {
@@ -53,35 +61,6 @@ body {
   background-color: white;
 }
 
-#home {
-  display: flex;
-  flex-direction: column;
-  padding: 3px 200px;
-  height: 400px;
-  justify-content: center;
-  align-items: center;
-}
-
-#home::before {
-  content: "";
-  position:absolute;
-  background: url("https://mediacell.iitr.ac.in/wp-content/uploads/sites/3/2021/01/e-summit-2020jpeg.jpeg")
-    no-repeat center center/cover;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0.75;
-}
-.btn {
-  padding: 3px 20px;
-  border: 2px solid burlywood;
-  border-radius: 10px;
-  margin: 5px;
-  font-size: 12px;
-  background-color: rgb(139, 138, 100);
-  font-family: "Fredoka One", cursive;
-  cursor: pointer;
-}
 .bod {
   display: flex;
   flex-direction: column;
@@ -206,6 +185,9 @@ body {
 
 .icons {
   height: 30px;
+  width: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .content-image {
@@ -222,6 +204,53 @@ body {
   top: -20px;
   background-color: #262626;
   margin-left: 50px;
+}
+
+.tabbar {
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  position: absolute;
+  background-color: #262626;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  color: white;
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  color: white;
+  background-color: blue;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color: white;
+  background-color: #0f33ff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+}
+
+.iconsbar {
+  padding: 10px;
+  display: flex;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
