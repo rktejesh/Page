@@ -76,6 +76,9 @@ body {
   display: flex;
   justify-content: center;
 }
+.apply{
+  margin: 50px;
+}
 .TimelineWord {
   color: white;
   font-size: 40px;
