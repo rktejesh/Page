@@ -318,6 +318,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-self: flex-end;
+  gap: 10px;
 }
 .social-handles>a{
   width: 40px;
