@@ -61,7 +61,7 @@ body{
 
   /* About Us */
 
-@media screen and (min-width: 820px)
+@media screen and (min-width: 978px)
 {
     .about{
         margin: 70px 200px 50px 200px;
@@ -69,8 +69,11 @@ body{
         flex-direction: column;
         align-items:center;
     }
+    .eventlist{
+        margin: 0px 200px 10px 200px;
+    }
 }
-@media screen and (max-width: 820px)
+@media screen and (max-width: 978px)
 {
     .about{
         margin: 70px 30px 50px 30px;
@@ -78,4 +81,23 @@ body{
         flex-direction: column;
         align-items:center;
     }
+    
+}
+
+/* Events */
+.eventlist{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+.holder{
+    display:flex;
+    gap: 50px;
+}
+.event{
+    margin: 10px;
+    background-color: rgb(51, 50, 50);
+    color: cornsilk;
+    padding: 5px;
 }
