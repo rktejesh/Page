@@ -183,16 +183,22 @@ body{
   cursor: pointer;
   position: relative;
   display: block;
-  width: 100px;
+  width: 120px;
   height: 40px;
   left: 47%;
   color: cornsilk;
   background-color: rgb(51, 50, 50);
   text-decoration: none;
-  /* bottom:0%; */
+  border-radius: 7px;
   font-weight: 500;
   margin-top: 20px;
   margin-bottom: 20px;
+  transition: 0.3s;
+  font-family: 'Comfortaa', cursive;
+}
+.apply-now button:hover{
+  opacity: 0.7;
+  width: 130px;
 }
 .footer{
   display: flex;
@@ -214,7 +220,7 @@ body{
 h1{
   font-family: 'Zen Dots', cursive;
 }
-p{
+p, li{
   font-family: 'Comfortaa', cursive;
 }
 h4{
