@@ -6,6 +6,11 @@ body{
     margin-right: 0px;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
+}
+html{
+  background-size: cover;
+  max-width: 100%;
 }
 /* Nav Bar */
 .navbar {
@@ -225,4 +230,18 @@ p, li{
 }
 h4{
   font-family: 'Josefin Sans', sans-serif;
+}
+
+/*header*/
+
+.bod{
+  margin: 0px 100px 0px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bod>img{
+  height:200px;
+  margin: 0px;
+  padding: 0px;
 }
