@@ -1,6 +1,6 @@
 body{
-    background: rgb(142,105,92);
-    background: linear-gradient(49deg, rgba(142,105,92,1) 4%, rgba(177,162,150,1) 34%, rgba(152,139,129,1) 61%, rgba(157,128,113,1) 79%, rgba(161,47,40,1) 100%);
+  background: rgb(180,121,178);
+background: linear-gradient(24deg, rgba(180,121,178,1) 0%, rgba(0,0,0,1) 80%);
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -14,6 +14,7 @@ html{
 }
 /* Nav Bar */
 .navbar {
+  position: fixed;
     margin: 0px;
     display: flex;
     flex-wrap: wrap;
@@ -22,7 +23,7 @@ html{
     z-index: 1;
     padding: 0%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(238, 232, 240, 0.7);
   }
   .item{
     display: flex;
@@ -44,11 +45,12 @@ html{
   
   .navbar ul li {
     float:left;
+    font-family: 'Comfortaa', cursive;
   }
   
   .navbar ul li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 25px 18px;
     text-decoration: none;
@@ -120,18 +122,21 @@ html{
 .event{
     margin: 10px;
     background-color: rgb(51, 50, 50);
-    color: cornsilk;
+    color: #f2e8e2;
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
     border-radius: 7px;
+    
 }
 .event h4{
     font-size: larger;
     margin-bottom: 3px;
 }
-
+.event>p{
+  font-family: 'Comfortaa', cursive;
+}
 /* Footer */
 .social_handles ul {
   position: absolute;
@@ -224,9 +229,11 @@ html{
 }
 h1{
   font-family: 'Zen Dots', cursive;
+  
 }
-p, li{
+.about>p{
   font-family: 'Comfortaa', cursive;
+  color: #ffffff;
 }
 h4{
   font-family: 'Josefin Sans', sans-serif;
@@ -235,13 +242,18 @@ h4{
 /*header*/
 
 .bod{
-  margin: 0px 100px 0px 100px;
+  margin: 100px 100px 0px 100px;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  gap: 100px;
+
 }
 .bod>img{
-  height:200px;
+  height:400px;
   margin: 0px;
   padding: 0px;
+}
+.col{
+  /* color: #d4a59a; */
+  color: #ecdce9;
 }
